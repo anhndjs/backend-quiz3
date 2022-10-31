@@ -1,0 +1,23 @@
+{
+  "name": "backend-quiz3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Coin.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon Coin.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anhndjs/backend-quiz3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anhndjs/backend-quiz3/issues"
+  },
+  "homepage": "https://github.com/anhndjs/backend-quiz3#readme",
+  "dependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
