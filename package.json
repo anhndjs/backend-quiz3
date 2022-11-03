@@ -18,6 +18,9 @@
   },
   "homepage": "https://github.com/anhndjs/backend-quiz3#readme",
   "dependencies": {
+    "lodas": "^1.2.0",
+    "lodash": "^4.17.21",
+    "mocha": "^10.1.0",
     "nodemon": "^2.0.20"
   }
 }
