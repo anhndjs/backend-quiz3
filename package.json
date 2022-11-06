@@ -4,7 +4,7 @@
   "description": "",
   "main": "Coin.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha './test/*.test.js'",
     "start": "nodemon Coin.js"
   },
   "repository": {
@@ -18,9 +18,11 @@
   },
   "homepage": "https://github.com/anhndjs/backend-quiz3#readme",
   "dependencies": {
+    "chai": "^4.3.6",
     "lodas": "^1.2.0",
     "lodash": "^4.17.21",
     "mocha": "^10.1.0",
-    "nodemon": "^2.0.20"
+    "nodemon": "^2.0.20",
+    "sinon": "^14.0.1"
   }
 }

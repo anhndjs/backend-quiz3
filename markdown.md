@@ -242,3 +242,61 @@
 > _.dropRigt([1, 2, 3], 5) =>[]
 
 >_.dropRight([1 , 2, 3], 0) => [1, 2, 3]
+
+## **Collection** 
+
+- Là hàm duyệt qua các phần tử trong collection và thực hiện hàm iteratee
+
+> _.forEach(collection, [iteratee=_.identity])
+
+**Example**
+
+> _.forEach([1, 2], function(value) {
+>
+>  console.log(value);
+>
+>});
+>
+>// => Logs `1` then `2`.
+>
+>_.forEach({ 'a': 1, 'b': 2 }, function(value, key) {
+>
+>  console.log(key);
+>
+>});
+>
+>// => Logs 'a' then 'b' (iteration order is not guaranteed). 
+
+## **Collection orderBy**
+
+Phương thức này giống như _.sortBy ngoại trừ việc nó cho phép chỉ định thứ tự sắp xếp của các lần lặp để sắp xếp theo. Nếu đơn hàng không được chỉ định, tất cả các giá trị được sắp xếp theo thứ tự tăng dần. Nếu không, hãy chỉ định thứ tự "desc" để giảm dần hoặc "asc" cho thứ tự sắp xếp tăng dần của các giá trị tương ứng.
+
+**Cú pháp**
+
+> _.orderBy(collection, [iteratees=[_.identity]], [orders])
+
+**ReTurn**
+
+- Mảng mới sau khi được sắp xếp
+
+**Example**
+
+> var users = [
+>  { 'user': 'fred',   'age': 48 },
+>  { 'user': 'barney', 'age': 34 },
+>  { 'user': 'fred',   'age': 40 },
+>  { 'user': 'barney', 'age': 36 }
+>];
+> 
+>// Sort by `user` in ascending order and by `age` in descending order.
+>_.orderBy(users, ['user', 'age'], ['asc', 'desc']);
+>// => objects for [['barney', 36], ['barney', 34], ['fred', 48], >>>  ['fred', 40]]
+
+
+
+
+
+
+
+
+
