@@ -46,4 +46,4 @@ describe('#handle', function () {
     expect(spy.calledOnce).to.be.true;
     expect(spy.calledWith(10, 20)).to.be.true
   })
-})
+});
